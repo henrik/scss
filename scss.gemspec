@@ -9,12 +9,12 @@ Gem::Specification.new do |spec|
   spec.homepage      = ""
   spec.license       = "MIT"
 
-  spec.post_install_message = %{\nNOTE: The gem is called "sass", not "scss"! Get rid of the "scss" gem and try again.\n\n}
-
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = []
   spec.test_files    = []
   spec.require_paths = ["lib"]
+
+  spec.add_dependency "sass"
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
