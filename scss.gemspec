@@ -9,8 +9,6 @@ Gem::Specification.new do |spec|
   spec.homepage      = ""
   spec.license       = "MIT"
 
-  spec.post_install_message = %{\nNOTE: The gem is called "sass", not "scss"! Get rid of the "scss" gem and try again.\n\n}
-
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = []
   spec.test_files    = []
